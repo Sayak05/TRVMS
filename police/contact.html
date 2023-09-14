@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Generate Challan</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+   <script src= "https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js">
+   </script>
+</head>
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="home3.html" class="logo">ProtectoGuy</a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="search officers..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">Sayak Sen</h3>
+         <p class="role">Police Officer</p>
+         <a href="profile.html" class="btn">view profile</a>
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">Sayak Sen</h3>
+      <p class="role">Police Officer</p>
+      <a href="profile.html" class="btn">view profile</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="home3.html"><i class="fas fa-home"></i><span>Home</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>Generate Challan</span></a>
+      <a href="challan.html"><i class="fas fa-headset"></i><span>Previous Challans</span></a>
+      <a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i><span>Log Out</span></a>
+   </nav>
+
+</div>
+
+<section class="contact">
+
+   <div class="row">
+
+      <div class="image">
+         <img src="images/policeman-svgrepo-com.svg" alt="">
+      </div>
+
+      <form action="" method="post" id="makepdf">
+         <h3>Generate Challan</h3>
+         <input type="text" placeholder="Enter owner name" name="name" required maxlength="50" class="box">
+         <input type="text" placeholder="Enter vehicle no" name="text" required maxlength="50" class="box">
+         <input type="text" placeholder="Offence Committed" name="text" required maxlength="50" class="box">
+         <input type="text" placeholder="Enter vehicle model" name="text" required maxlength="50" class="box">
+         <input type="number" placeholder="Enter phone number" name="number" required maxlength="50" class="box">
+         <input type="number" placeholder="Enter total fine" name="number" required maxlength="50" class="box">
+         <input type="file" accept="image/*" required class="box">
+         <button id="pdfButton" class="inline-btn">Generate PDF</button>
+
+         <!-- <input type="submit" value="send message" class="inline-btn" name="submit"> -->
+      </form>
+
+   </div>
+
+   <div class="box-container">
+
+      <div class="box">
+         <i class="fas fa-phone"></i>
+         <h3>Phone Number</h3>
+         <a href="tel:1234567890">123-456-7890</a>
+         <a href="tel:1112223333">111-222-3333</a>
+      </div>
+      
+      <div class="box">
+         <i class="fas fa-envelope"></i>
+         <h3>Email Address</h3>
+         <a href="mailto:rijusen81458@gmail.com">sayaksen@gmail.com</a>
+         <a href="mailto:shuvechhanandi2020@gmail.com">parthivmodak@gmail.com</a>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-map-marker-alt"></i>
+         <h3>Police Station Address</h3>
+         <a href="#">A-10 VIP Park, Kestopur, West Bengal, India - 700101</a>
+      </div>
+
+   </div>
+
+</section>
+<footer class="footer">
+
+   &copy; copyright @ 2023 by <span>BPPIMT</span> | all rights reserved!
+
+</footer>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+   
+</body>
+</html>

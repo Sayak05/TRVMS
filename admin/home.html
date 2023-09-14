@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Admin Panel</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="home.html" class="logo">ProtectoGuy</a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="search admin panel..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-2.jpg" class="image" alt="">
+         <h3 class="name">Shuvechha Nandi</h3>
+         <p class="role">Admin</p>
+         <a href="profile.html" class="btn">view profile</a>
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-2.jpg" class="image" alt="">
+      <h3 class="name">Shuvechha Nandi</h3>
+      <p class="role">Admin</p>
+      <a href="profile.html" class="btn">view profile</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="home.html"><i class="fas fa-home"></i><span>Home</span></a>
+      <a href="dashboard.html"><i class="fa-solid fa-gauge"></i></i><span>Dashboard</span></a>
+      <a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i><span>Log Out</span></a>
+   </nav>
+
+</div>
+
+<section class="home-grid">
+
+   <h1 class="heading">Overview</h1>
+   <div class="box-container">
+
+      <div class="box">
+         <h3 class="title">Accident Details</h3>
+         <p class="likes">Duration : <span>25 days</span></p>
+         <a href="https://kolkatatrafficpolice.net/KTPGOVIN/Show_Accidents.aspx" class="inline-btn">View Hisrory</a>
+         <p class="likes">Total killed : <span>12</span></p>
+         <a href="https://kolkatatrafficpolice.net/KTPGOVIN/Show_Programs.aspx" class="inline-btn">Traffic News Update</a>
+         <p class="likes">Total injured : <span>4</span></p>
+         <a href="https://www.kolkatatrafficpolice.gov.in/KolkataPoliceReview.pdf" class="inline-btn">Reviews</a>
+      </div>
+
+      <div class="box">
+         <h3 class="title">Reasons of accidents</h3>
+         <div class="flex">
+            <a href="#"><i class="fas fa-car-burst"></i><span>Without Seatbelt</span></a>
+            <a href="#"><i class="fa-solid fa-person-falling-burst"></i><span>Without Helmet</span></a>
+            <a href="#"><i class="fas fa-car-burst"></i><span>Overspeeding</span></a>
+            <a href="#"><i class="fa-solid fa-person-falling-burst"></i><span>Distracted Driving</span></a>
+            <a href="#"><i class="fas fa-car-burst"></i><span>Construction Zones</span></a>
+         </div>
+      </div>
+
+      <div class="box">
+         <h3 class="title">Popular Violation</h3>
+         <div class="flex">
+            <a href="#"><i class="fa-solid fa-car"></i><span>Invalid Licence</span></a>
+            <a href="#"><i class="fa-solid fa-car"></i><span>Invalid Registration</span></a>
+            <a href="#"><i class="fa-solid fa-motorcycle"></i><span>Overpopulated Bike</span></a>
+         </div>
+      </div>
+
+      <div class="box">
+         <h3 class="title">Be safe on road</h3>
+         <p class="tutor">Safety on the road is paramount, so buckle up tight.</p>
+         <a href="https://en.wikipedia.org/wiki/Road_traffic_safety#:~:text=Road%20traffic%20safety%20refers%20to,(mainly%20buses%20and%20trams)." class="inline-btn">Learn More</a>
+      </div>
+
+   </div>
+
+</section>
+
+
+
+<section class="courses">
+
+   <h1 class="heading">Recent Violation Happend</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/Overspeeding.jpg" alt="">
+            <div class="info">
+               <h3>Newtown</h3>
+               <span>21-8-2023</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58940.950816958255!2d88.45160144828594!3d22.586229946402003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275350398a5b9%3A0x75e165b244323425!2sNewtown%2C%20Kolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1694540235192!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <span>Overspeeding</span>
+         </div>
+         <h3 class="title">Overspeeding in Newtown Area</h3>
+         <a href="https://goo.gl/maps/LwB1uyxbbpNk7Ut88" class="inline-btn">View Area</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/Overspeeding.jpg" alt="">
+            <div class="info">
+               <h3>Rajabazar</h3>
+               <span>22-08-2023</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7368.611302123079!2d88.36971659666686!3d22.56766887530002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02765961c4b35d%3A0xfe3d0ba7a2e15cd4!2sRaja%20Bazar%2C%20Kolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1694541140246!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <span>Overspeeding</span>
+         </div>
+         <h3 class="title">Overspeeding in Rajabazar Area</h3>
+         <a href="https://goo.gl/maps/P42YYmdrWcPipqYJ7" class="inline-btn">View Area</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/Puttingonaseatbelt_2c93b8648072d3cead434247a380a1bf_2000.jpg" alt="">
+            <div class="info">
+               <h3>Baguihati</h3>
+               <span>22-08-2023</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7365.980296368194!2d88.42527234667025!3d22.61684307162252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89e25e6597d69%3A0xf2a8229a9b93e1b8!2sBaguiati%2C%20Kolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1694541487468!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <span>No Seatbelt</span>
+         </div>
+         <h3 class="title">Wearing no seatbelt in Baguihati</h3>
+         <a href="https://goo.gl/maps/ZYC8F87YmrL7jCsF7" class="inline-btn">View Area</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/Puttingonaseatbelt_2c93b8648072d3cead434247a380a1bf_2000.jpg" alt="">
+            <div class="info">
+               <h3>Hatibagan</h3>
+               <span>23-08-2023</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.4953211199722!2d88.36807662634055!3d22.59797143203806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02763a6d0ec117%3A0x1980c18ab90e3fd9!2sHati%20Bagan%2C%20Shyam%20Bazar%2C%20Kolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1694541603600!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <span>No Seatbelt</span>
+         </div>
+         <h3 class="title">Wearing no seatbelt in Hatibagan</h3>
+         <a href="https://goo.gl/maps/dzRKXySni35fnJwB7" class="inline-btn">View Area</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/helmet.jpg" alt="">
+            <div class="info">
+               <h3>Jadavpur</h3>
+               <span>23-08-2023</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7372.514933040693!2d88.3618466966618!3d22.49452128075729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02713b257b4201%3A0x823fbc7ff044ca83!2sJadavpur%2C%20Kolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1694541945444!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <span>No Helmet</span>
+         </div>
+         <h3 class="title">Wearing no helmet in Jadavpur</h3>
+         <a href="https://goo.gl/maps/xZEFBpWE6QvL27UJ8" class="inline-btn">View Area</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/helmet.jpg" alt="">
+            <div class="info">
+               <h3>Naihati</h3>
+               <span>24-08-2023</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14702.581850401468!2d88.41086486935913!3d22.88955168638264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f896a1910e4387%3A0xe762ecc698e4c859!2sNaihati%2C%20Kolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1694542143148!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <span>No Helmet</span>
+         </div>
+         <h3 class="title">Wearing no helmet in Naihati</h3>
+         <a href="https://goo.gl/maps/Wm7HovUDvrtYbqST7" class="inline-btn">View Area</a>
+      </div>
+
+   </div>
+
+   <div class="more-btn">
+      <a href="https://www.kolkatatrafficpolice.gov.in/guidelines_for_drivers.html" class="inline-option-btn">Guidelines for Drivers</a>
+   </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+   &copy; copyright @ 2023 by <span>BPPIMT</span> | all rights reserved!
+
+</footer>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+   
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Challan Details</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+
+</head>
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="home2.html" class="logo">ProtectoGuy</a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="search drivers..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">Parthiv Modak</h3>
+         <p class="role">Owner</p>
+         <a href="profile.html" class="btn">View Profile</a>
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">Parthiv Modak</h3>
+      <p class="role">Car Owner</p>
+      <a href="profile.html" class="btn">View Profile</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="home2.html"><i class="fas fa-home"></i><span>Home</span></a>
+      <a href="challan.html"><i class="fas fa-wallet"></i><span>View Challan Details</span></a>
+      <a href="payfine.html"><i class="fas fa-wallet"></i><span>Pay Fine</span></a>
+      <a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i><span>Log Out</span></a>
+   </nav>
+
+</div>
+
+<section class="form-container">
+
+    <form action="#" method="post" id="paymentForm" enctype="multipart/form-data">
+        <h3>Challan Details</h3>
+        <p>Type of Violance</p>
+        <p type="text" class="box" required>Overspeeding</p>
+
+        <p>Place</p>
+        <p type="text" class="box" required>Near Jadavpur University</p>
+
+        <p>Amount Due</p>
+        <p type="number" class="box" required>500</p>
+
+        <p>Due By</p>
+        <p type="date" class="box" required>2023-11-29</p>
+
+        <a href="https://goo.gl/maps/HHjYyv18dMtdkVq27" class="btn">See Violance Area</a>
+    </form>
+
+ </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+   &copy; copyright @ 2023 by <span>BPPIMT</span> | all rights reserved!
+
+</footer>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+   
+</body>
+</html>
