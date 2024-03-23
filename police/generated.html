@@ -83,7 +83,7 @@
 
 <script>
    // Use JavaScript to fetch and display the data from retrieve_data.php
-   fetch('connect2.php')
+   fetch('connect3.php')
       .then(response => response.json())
       .then(data => {
           const challanContainer = document.getElementById('challan-container');
@@ -114,7 +114,7 @@
                       <p type="date" class="box" required>${item.fine}</p>
                       <p>Loction</p>
                       <p type="date" class="box" required>${item.loc}</p>
-                      <a href="${item.map}" class="btn">See Violance Area</a>
+                      <a href="contact.html" class="btn">close</a>
                   `;
                   challanContainer.appendChild(form);
               });

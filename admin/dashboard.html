@@ -109,7 +109,7 @@
       <div class="report-container">
          <div class="report-header">
             <h1 class="recent-Articles">Recent Violations</h1>
-            <button class="view">View All</button>
+            <a href="https://kolkatatrafficpolice.net/KTPGOVIN/Show_Accidents.aspx" class="inline-btn">View All</a>
          </div>
 
          <div class="report-body">
@@ -120,103 +120,7 @@
                <h3 class="t-op">Status</h3>
             </div>
 
-            <div class="items">
-               <div class="item1">
-                  <h3 class="t-op-nextlvl">24-8-2023</h3>
-                  <h3 class="t-op-nextlvl">Jadavpur</h3>
-                  <h3 class="t-op-nextlvl">Red Light</h3>
-                  <h3 class="t-op-nextlvl label-tag1">Not Paid</h3>
-               </div>
-
-               <div class="item1">
-                  <h3 class="t-op-nextlvl">24-8-2023</h3>
-                  <h3 class="t-op-nextlvl">Naihati</h3>
-                  <h3 class="t-op-nextlvl">No Helmet</h3>
-                  <h3 class="t-op-nextlvl label-tag">Paid</h3>
-               </div>
-
-               <div class="item1">
-                  <h3 class="t-op-nextlvl">23-8-2023</h3>
-                  <h3 class="t-op-nextlvl">Hatibagan</h3>
-                  <h3 class="t-op-nextlvl">No Seatbelt</h3>
-                  <h3 class="t-op-nextlvl label-tag">Paid</h3>
-               </div>
-
-               <div class="item1">
-                  <h3 class="t-op-nextlvl">23-8-2023</h3>
-                  <h3 class="t-op-nextlvl">Jadavpur</h3>
-                  <h3 class="t-op-nextlvl">No Helmet</h3>
-                  <h3 class="t-op-nextlvl label-tag1">Not Paid</h3>
-               </div>
-
-               <div class="item1">
-                  <h3 class="t-op-nextlvl">23-8-2023</h3>
-                  <h3 class="t-op-nextlvl">Rajabazar</h3>
-                  <h3 class="t-op-nextlvl">Red Light</h3>
-                  <h3 class="t-op-nextlvl label-tag1">Not Paid</h3>
-               </div>
-
-               <div class="item1">
-                  <h3 class="t-op-nextlvl">23-8-2023</h3>
-                  <h3 class="t-op-nextlvl">Newtown</h3>
-                  <h3 class="t-op-nextlvl">No Helmet</h3>
-                  <h3 class="t-op-nextlvl label-tag">Paid</h3>
-               </div>
-
-               <div class="item1">
-                  <h3 class="t-op-nextlvl">23-8-2023</h3>
-                  <h3 class="t-op-nextlvl">Uttarpara</h3>
-                  <h3 class="t-op-nextlvl">Overspeeding</h3>
-                  <h3 class="t-op-nextlvl label-tag1">Not Paid</h3>
-               </div>
-
-               <div class="item1">
-                  <h3 class="t-op-nextlvl">22-8-2023</h3>
-                  <h3 class="t-op-nextlvl">Baguihati</h3>
-                  <h3 class="t-op-nextlvl">No Seatbelt</h3>
-                  <h3 class="t-op-nextlvl label-tag">Paid</h3>
-               </div>
-
-               <div class="item1">
-                  <h3 class="t-op-nextlvl">22-8-2023</h3>
-                  <h3 class="t-op-nextlvl">Uttarpara</h3>
-                  <h3 class="t-op-nextlvl">No Helmet</h3>
-                  <h3 class="t-op-nextlvl label-tag">Paid</h3>
-               </div>
-
-               <div class="item1">
-                  <h3 class="t-op-nextlvl">22-8-2023</h3>
-                  <h3 class="t-op-nextlvl">Rajabazar</h3>
-                  <h3 class="t-op-nextlvl">Overspeeding</h3>
-                  <h3 class="t-op-nextlvl label-tag1">Not Paid</h3>
-               </div>
-
-               <div class="item1">
-                  <h3 class="t-op-nextlvl">22-8-2023</h3>
-                  <h3 class="t-op-nextlvl">Naihati</h3>
-                  <h3 class="t-op-nextlvl">No Helmet</h3>
-                  <h3 class="t-op-nextlvl label-tag">Paid</h3>
-               </div>
-
-               <div class="item1">
-                  <h3 class="t-op-nextlvl">21-8-2023</h3>
-                  <h3 class="t-op-nextlvl">Newtown</h3>
-                  <h3 class="t-op-nextlvl">Overspeeding</h3>
-                  <h3 class="t-op-nextlvl label-tag">Paid</h3>
-               </div>
-
-               <div class="item1">
-                  <h3 class="t-op-nextlvl">21-8-2023</h3>
-                  <h3 class="t-op-nextlvl">Baguihati</h3>
-                  <h3 class="t-op-nextlvl">No Helmet</h3>
-                  <h3 class="t-op-nextlvl label-tag">Paid</h3>
-               </div>
-
-               <div class="item1">
-                  <h3 class="t-op-nextlvl">21-8-2023</h3>
-                  <h3 class="t-op-nextlvl">Hatibagan</h3>
-                  <h3 class="t-op-nextlvl">Red Light</h3>
-                  <h3 class="t-op-nextlvl label-tag">Paid</h3>
+            <div class="items" id="item1-container">
                </div>
 
             </div>
@@ -224,7 +128,40 @@
       </div>
    </section>
 
-
+   <script>
+      var today = new Date();
+      // Format the resulting date as a string
+      var formattedDate = today.toLocaleDateString('en-US', { year: 'numeric', month: '2-digit', day: '2-digit' });
+      // Use JavaScript to fetch and display the data from retrieve_data.php
+      fetch('connect.php')
+         .then(response => response.json())
+         .then(data => {
+             const challanContainer = document.getElementById('item1-container');
+             if (data.length > 0) {
+                 data.forEach(item => {
+                     // Create a form for each item
+                     const form = document.createElement('form');
+                     form.classList.add('item1');
+                     form.setAttribute('action', '#');
+                     form.setAttribute('method', 'post');
+                     form.setAttribute('enctype', 'multipart/form-data');
+                     form.innerHTML = `
+                     <h3 class="t-op-nextlvl">${formattedDate}</h3>
+                     <h3 class="t-op-nextlvl">${item.loc}</h3>
+                     <h3 class="t-op-nextlvl">${item.offence}</h3>
+                     <h3 class="t-op-nextlvl ${item.id % 2 === 0 ? 'label-tag' : 'label-tag1'}">${item.id % 2 === 0 ? 'Paid' : 'Not Paid'}</h3>
+                     `;
+                     // Append the form to the respective container
+                     challanContainer.appendChild(form);
+                 });
+             } else {
+                 challanContainer.innerHTML = '<h1 style="font-size: 2rem;">No database</h1>';
+             }
+         })
+         .catch(error => {
+             console.error('Error:', error);
+         });
+   </script>
 
 
 

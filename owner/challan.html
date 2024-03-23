@@ -53,7 +53,7 @@
 
    <div class="profile">
       <img src="images/pic-1.jpg" class="image" alt="">
-      <h3 class="name">Parthiv Modak</h3>
+      <h3 class="name" id="owner">Parthiv Modak</h3>
       <p class="role">Car Owner</p>
       <a href="profile.html" class="btn">View Profile</a>
    </div>
@@ -67,26 +67,67 @@
 
 </div>
 
-<section class="form-container">
+<section class="form-container" id="challan-container">
+</section>
 
-    <form action="#" method="post" id="paymentForm" enctype="multipart/form-data">
-        <h3>Challan Details</h3>
-        <p>Type of Violance</p>
-        <p type="text" class="box" required>Overspeeding</p>
-
-        <p>Place</p>
-        <p type="text" class="box" required>Near Jadavpur University</p>
-
-        <p>Amount Due</p>
-        <p type="number" class="box" required>500</p>
-
-        <p>Due By</p>
-        <p type="date" class="box" required>2023-11-29</p>
-
-        <a href="https://goo.gl/maps/HHjYyv18dMtdkVq27" class="btn">See Violance Area</a>
-    </form>
-
- </section>
+<script>
+   // Get today's date
+   var today = new Date();
+ 
+   // Add a week to today's date (7 days)
+   var nextWeek = new Date(today);
+   nextWeek.setDate(today.getDate() + 7);
+ 
+   // Format the resulting date as a string
+   var formattedDate = nextWeek.toDateString();
+   
+   // Use JavaScript to fetch and display the data from retrieve_data.php
+   fetch('connect.php')
+      .then(response => response.json())
+      .then(data => {
+          const challanContainer = document.getElementById('challan-container');
+          const owner = document.getElementById('owner').textContent; // Get the owner's name from the HTML
+          
+          if (data.length > 0) {
+              let matchFound = false; // Variable to track if a match is found
+              data.forEach(item => {
+                  if (item.name === owner) { // Check if the name in the data matches the owner's name
+                      matchFound = true; // A match is found
+                      const form = document.createElement('form');
+                      form.classList.add('challan-form');
+                      form.style.border = '1px solid #ccc'; // Add a border around each form
+                      form.style.padding = '20px'; // Add space around the form content
+                      form.style.marginBottom = '20px'; // Add space between the forms
+                      form.style.marginRight = '20px';
+                      form.setAttribute('action', '#');
+                      form.setAttribute('method', 'post');
+                      form.setAttribute('enctype', 'multipart/form-data');
+                      form.innerHTML = `
+                          <h3>Challan Details</h3>
+                          <p>Type of Violation</p>
+                          <p type="text" class="box" required>${item.offence}</p>
+                          <p>Amount Due</p>
+                          <p type="date" class="box" required>${item.fine}</p>
+                          <p>Due By</p>
+                          <p type="date" class="box" required>${formattedDate}</p>
+                          <a href="${item.map}" class="btn">See Violation Area</a>
+                      `;
+                      challanContainer.appendChild(form);
+                  }
+              });
+ 
+              if (!matchFound) {
+                  challanContainer.innerHTML = '<h1 style="font-size: 5rem;">No due fine</h1>';
+              }
+          } else {
+              challanContainer.innerHTML = '<h1 style="font-size: 5rem;">No due fine</h1>';
+          }
+      })
+      .catch(error => {
+          console.error('Error:', error);
+      });
+ </script>
+ 
 
 
 

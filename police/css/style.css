@@ -1273,6 +1273,18 @@ section{
    margin: 1rem 0;
 }
 
+/* Add this CSS to your custom CSS file */
+.challan-form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Optional: To remove the border from the last form, add this CSS rule */
+.challan-form:last-child {
+   border-right: none;
+   margin-right: 0;
+}
 
 
 
@@ -1373,4 +1385,4 @@ section{
       height: 25rem;
    }
 
-}
+}       
